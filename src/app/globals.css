@@ -1,26 +1,60 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* DAIRIA Avocats Brand Palette */
+  --background: #f8f9fb;
+  --foreground: #1e2d3d;
+  --card: #ffffff;
+  --card-foreground: #1e2d3d;
+  --dairia-orange: #e8842c;
+  --dairia-orange-dark: #d4741f;
+  --dairia-orange-light: #f0a060;
+  --dairia-orange-bg: rgba(232, 132, 44, 0.08);
+  --dairia-navy: #1e2d3d;
+  --dairia-navy-light: #2a3d50;
+  --dairia-secondary: #5a6a7a;
+  --dairia-border: #e2e6ec;
+  --dairia-surface: #f8f9fb;
+  --destructive: #dc2626;
+  --success: #16a34a;
+  --warning: #f59e0b;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-dairia-orange: var(--dairia-orange);
+  --color-dairia-orange-dark: var(--dairia-orange-dark);
+  --color-dairia-orange-light: var(--dairia-orange-light);
+  --color-dairia-navy: var(--dairia-navy);
+  --color-dairia-navy-light: var(--dairia-navy-light);
+  --color-dairia-secondary: var(--dairia-secondary);
+  --color-dairia-border: var(--dairia-border);
+  --color-dairia-surface: var(--dairia-surface);
+  --color-destructive: var(--destructive);
+  --color-success: var(--success);
+  --color-warning: var(--warning);
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', sans-serif;
+  font-size: 15px;
+  letter-spacing: 0.01em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* DAIRIA utilities */
+.shadow-dairia {
+  box-shadow: 0 1px 3px rgba(30, 45, 61, 0.08);
+}
+.shadow-dairia-md {
+  box-shadow: 0 4px 12px rgba(30, 45, 61, 0.1);
+}
+.shadow-dairia-lg {
+  box-shadow: 0 8px 24px rgba(30, 45, 61, 0.12);
 }
